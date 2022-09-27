@@ -1,5 +1,9 @@
 <template>
-  <div>
-    <h1 class="text-red-500">Twitter</h1>
+  <div :class="{ dark: darkMode }">
+    <h1 class="text-red-500 dark:text-dim-600">Twitter</h1>
   </div>
 </template>
+
+<script setup>
+const darkMode = ref(true);
+</script>
